@@ -20,7 +20,9 @@ function ExtendedDevice() {
 
     var me = this;
 
-    channel.onCordovaReady.subscribe(function () {
+    console.log("ExtendedDevice init...");
+
+    /* channel.onCordovaReady.subscribe(function () {
         me.getInfo(function (info) {
             //ignoring info.cordova returning from native, we should use value from cordova.version defined in cordova.js
             //TODO: CB-5105 native implementations should not return info.cordova
@@ -36,7 +38,7 @@ function ExtendedDevice() {
             me.available = false;
             utils.alert("[ERROR] Error initializing Cordova: " + e);
         });
-    });
+    }); */
 }
 
 /**
